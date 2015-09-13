@@ -2,9 +2,10 @@ package com.thoughtworks.tddintro.factorial;
 
 public class Factorial {
     public Integer compute(int i) {
-        if(i<2){
-            return 1;
+        int factorial = 1;
+        for (int x = 1; x < i+1; x++) {
+            factorial *= x;
         }
-        return i;
+        return factorial;
     }
 }
