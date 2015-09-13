@@ -10,15 +10,21 @@ public class Account {
         accountBalance = initialBalance;
     }
 
-    public int deposit(int amountDeposited) {
-        return 150;
-    }
-
-    public int withdraw(int amountWithdrawn) {
-        int newBalance = accountBalance - amountWithdrawn;
-        if(newBalance>0){
-            accountBalance = newBalance;
-        }
+    public int getBalance() {
         return accountBalance;
     }
+
+    public void deposit(int amountDeposited) {
+        accountBalance += amountDeposited;
+
+    }
+
+//    public void withdraw(int amountWithdrawn) {
+//        int newBalance = accountBalance - amountWithdrawn;
+//        if(newBalance>0){
+//            accountBalance = newBalance;
+//        }
+//    }
+
+
 }
