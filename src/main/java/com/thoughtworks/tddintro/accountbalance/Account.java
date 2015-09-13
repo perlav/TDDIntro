@@ -4,7 +4,10 @@ package com.thoughtworks.tddintro.accountbalance;
  * Created by PerlaIvetteVillarreal on 9/13/15.
  */
 public class Account {
+    private int accountBalance;
+
     public Account(int initialBalance) {
+        accountBalance = initialBalance;
     }
 
     public int deposit(int amountDeposited) {
@@ -12,6 +15,10 @@ public class Account {
     }
 
     public int withdraw(int amountWithdrawn) {
-        return 50;
+        int newBalance = accountBalance - amountWithdrawn;
+        if(newBalance>0){
+            accountBalance = newBalance;
+        }
+        return accountBalance;
     }
 }
