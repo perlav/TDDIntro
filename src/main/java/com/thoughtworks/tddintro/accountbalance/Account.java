@@ -19,12 +19,12 @@ public class Account {
 
     }
 
-//    public void withdraw(int amountWithdrawn) {
-//        int newBalance = accountBalance - amountWithdrawn;
-//        if(newBalance>0){
-//            accountBalance = newBalance;
-//        }
-//    }
+    public void withdraw(int amountWithdrawn) {
+        int newBalance = accountBalance - amountWithdrawn;
+        if(newBalance>-1){
+            accountBalance = newBalance;
+        }
+    }
 
 
 }
