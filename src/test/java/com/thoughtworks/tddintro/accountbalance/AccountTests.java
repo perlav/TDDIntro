@@ -5,7 +5,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 public class AccountTests {
-//Note - There is some repeated code but I could not find a good way of extracting it to a method. 
+//Note - There is some repeated code but I could not find a good way of extracting it to a method.
 
     @Test
     public void shouldIncreaseMyBalanceWhenIDepositMoney(){
